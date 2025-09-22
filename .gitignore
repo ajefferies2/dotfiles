@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+nvim/.undodir/
+nvim/plugin/packer_compiled.lua
+nvim/site/
+nvim/.netrwhist
+*.swp
+*.swo
+.git/
+.gitignore
+.DS_Store
+Thumbs.db
+ranger/colorschemes/__init__.py
+
+
+
