@@ -38,18 +38,11 @@ fi
 echo "Creating config directory at $config_dir"
 mkdir -p "$config_dir"
 
-script_name="$(basename "$0")"
-echo "Copying configuration files..."
+echo "Copying Neovim configuration..."
 if command -v rsync >/dev/null 2>&1; then
-  rsync -a --exclude='.git' --exclude="$script_name" ./ "$config_dir"
+  rsync -a --exclude='.git' "$repo_dir/nvim/" "$config_dir"
 else
-  for item in .* *; do
-    [ "$item" = "." ] && continue
-    [ "$item" = ".." ] && continue
-    [ "$item" = ".git" ] && continue
-    [ "$item" = "$script_name" ] && continue
-    cp -a "$item" "$config_dir"
-  done
+  cp -a "$repo_dir/nvim/." "$config_dir"
 fi
 
 for dir in "${dot_dirs[@]}"; do
