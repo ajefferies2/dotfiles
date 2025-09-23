@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
+echo "I don't like my nvim synlinked, so its just getting copied into .config."
+echo "please run this from dotfiles/ I havent tested elsewhere."
 
 repo_dir="$(cd "$(dirname "$0")" && pwd)"
 
