@@ -6,7 +6,7 @@ echo "please run this from dotfiles/ I havent tested elsewhere."
 repo_dir="$(cd "$(dirname "$0")" && pwd)"
 
 dot_dirs=("i3" "alacritty" "ranger")
-dot_files=(".bashrc")
+dot_files=(".bashrc" ".xinitrc")
 
 default_packer_dir="${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/pack/packer/start/packer.nvim"
 default_config_dir="${XDG_CONFIG_HOME:-$HOME/.config}/nvim/"
