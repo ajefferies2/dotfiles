@@ -12,3 +12,4 @@ vim.opt.termguicolors = true
 vim.opt.wrap = false 
 vim.opt.incsearch = true
 vim.opt.scrolloff = 8
+vim.opt.clipboard = "unnamedplus"
