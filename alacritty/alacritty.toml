@@ -1,6 +1,8 @@
 [keyboard]
 bindings = [
-    { key = "Super", mods = "None", chars = "\u0002" }
+    { key = "Super", mods = "None", chars = "\u0002" },
+    {key = "C", mods = "Control|Shift", action = "Copy"},
+    {key = "V", mods = "Control|Shift", action = "Paste"}
 ]
 
 [colors]
@@ -115,3 +117,4 @@ live_config_reload = true
 working_directory = "None"
 
 [terminal]
+
